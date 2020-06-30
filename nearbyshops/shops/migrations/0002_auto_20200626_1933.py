@@ -4,7 +4,7 @@ import json
 from django.contrib.gis.geos import fromstr
 from pathlib import Path
 
-DATA_FILENAME = 'data.json'
+DATA_FILENAME = 'comercio.json'
 
 def load_data(apps, schema_editor):
     Shop = apps.get_model('shops', 'Shop')
