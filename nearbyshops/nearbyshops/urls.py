@@ -18,6 +18,7 @@ from django.urls import path
 from shops import views
 
 urlpatterns = [
+    path('', views.MainPageView.as_view()),
     path('admin', admin.site.urls),
     path('points', views.points_view),
 ]
