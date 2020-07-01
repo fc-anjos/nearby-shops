@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    # 'shops',
-    'shops.apps.ShopsConfig',
+    'shops',
+    'leaflet',
+    # 'shops.apps.ShopsConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LEAFLET_CONFIG = {
+  'DEFAULT_CENTER': (-23.5489, -46.6388),
+  'DEFAULT_ZOOM': 12,
+  'MIN_ZOOM': 1,
+  'MAX_ZOOM': 20,
+}

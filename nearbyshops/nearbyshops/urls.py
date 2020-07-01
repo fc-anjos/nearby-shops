@@ -20,5 +20,5 @@ from shops import views
 urlpatterns = [
     path('', views.home),
     path('admin', admin.site.urls),
-    path('points', views.points_view),
+    path('points', views.points_view, name='points'),
 ]
