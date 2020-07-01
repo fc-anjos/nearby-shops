@@ -2,6 +2,8 @@
 {% load static %}
 <html>
   <head>
+    <script src="{% static 'main.js' %}"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5Z15GZ1ZMPdKPvpxigVavP8aHvDFZb0&callback=initMap"></script>
   <style>
     body { margin: 0;}
     #map {
@@ -12,9 +14,7 @@
 
   </head>
   <body>
-    Hi! <span id="name"></span>
-    <div id="counter"></div>
-    <script src="{% static 'main.js' %}"></script>
+    <div id="map"></div>
   </body>
 
 </html>
