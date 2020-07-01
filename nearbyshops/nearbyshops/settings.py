@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    'shops',
+    # 'shops',
+    'shops.apps.ShopsConfig',
 ]
 
 MIDDLEWARE = [

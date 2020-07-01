@@ -16,8 +16,8 @@ def load_data(apps, schema_editor):
             if obj['geometry']['type'] == 'Point':
                 try:
                     coordinates = obj['geometry']['coordinates']
-                    latitude = coordinates[0]
-                    longitude = coordinates[1]
+                    latitude = coordinates[1]
+                    longitude = coordinates[0]
                     name = obj['properties']['name']
                     location = fromstr(f'POINT({longitude} {latitude})', srid=4326)
                     Shop(name=name, location = location).save()
