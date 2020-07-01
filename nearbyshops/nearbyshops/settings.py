@@ -131,9 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "shops/static"),
-)
+STATICFILES_DIRS = ['dist']
 
 LEAFLET_CONFIG = {
   'DEFAULT_CENTER': (-23.5489, -46.6388),
