@@ -1,20 +1,14 @@
-{% load leaflet_tags %}
 {% load static %}
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="{% static 'main.js' %}"></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5Z15GZ1ZMPdKPvpxigVavP8aHvDFZb0&callback=initMap"></script>
-  <style>
-    body { margin: 0;}
-    #map {
-      width: 100vw;
-      height: 100vh;
-      }
-  </style>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
   </head>
   <body>
-    <div id="map"></div>
+    Hi <span id='name'></span>
+    <div id='counter'></div>
+    <script src="{% static 'main.js' %}" charset="utf-8"></script>
   </body>
-
 </html>
