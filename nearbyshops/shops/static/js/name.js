@@ -1,5 +1,6 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
-const Name = () => 'Chong';
+const Name = () => 'Felipe';
 
-export default Name;
+export default hot(module)(Name);
