@@ -1,6 +1,5 @@
-const name = document.getElementById('name');
-name.innerText = 'Chan'
+import React from 'react';
 
-if (module.hot) {
-  module.hot.accept();
-}
+const Name = () => 'Chong';
+
+export default Name;
